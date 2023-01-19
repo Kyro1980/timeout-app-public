@@ -1,3 +1,7 @@
+<h1 align="center">TimeoutApp</h1>
+
+<p align="center">Website for basketball clinic</p>
+
 # TimeoutApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
@@ -13,6 +17,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Built With
+
+- JavaScript
+- Angular
+- HTML
+- CSS
 
 ## Running unit tests
 

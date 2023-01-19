@@ -1,0 +1,69 @@
+<img
+  src="assets/images/timeout_final_small.png"
+  class="img-thumbnail"
+  alt="..."
+/>
+
+<div class="wrapper-box">
+  <div class="container">
+    <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact us</h2>
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
+      directly. Our team will come back to you within
+      a matter of hours to help you.</p>
+
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+          <div class="form-group">
+            <label for="Email">Your email</label>
+            <input
+              type="email"
+              class="form-control"
+              name="Email"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+              formControlName="Email"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+            <hr class="hr hr-blurry" />
+
+          </div>
+          <div class="form-group">
+            <label for="fullname">Your name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="Fullname"
+              placeholder="Enter name"
+              formControlName="Fullname"
+            />
+          </div>
+
+          <hr class="hr hr-blurry" />
+
+          <div class="form-group">
+            <label for="comment">Yor message</label>
+            <textarea
+              class="form-control"
+              formControlName="Comment"
+              name="Comment"
+            >
+            </textarea>
+          </div>
+
+          <hr class="hr hr-blurry" />
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            [disabled]="!FormData.valid"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
